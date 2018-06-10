@@ -21,7 +21,7 @@ import java.util.Scanner;
 
 public class N_queensGame 
 {
-    static int n=12,pos[],count=1;
+    static int n=8,pos[],count=1;
     static boolean occupied[];
     
     //n             -> Size of Board = n x n (n queens)
@@ -32,10 +32,13 @@ public class N_queensGame
     public static void main(String[] args) 
     {
         Scanner ob=new Scanner(System.in);
+        
+        //Uncomment below lines for taking input from console.
         /*
         System.out.print("Enter no.of Queens : ");
         n=ob.nextInt();
         */
+        
         pos=new int[n];
         occupied=new boolean[n];
         for(int k=0;k<n;k++)
@@ -73,7 +76,7 @@ public class N_queensGame
                         System.out.print("-  ");
                 System.out.println();
             }
-            // Uncomment the line below for just 1st solution
+            // Uncomment the line below for just 1(st) solution
             // exit(0);
         }
     }
